@@ -1,3 +1,6 @@
+body{
+    word-break: break-all;
+}
 @media (min-width: 992px){
     body{
         padding-top: 88px;
@@ -197,4 +200,30 @@ background-position: center top;
 .font_notice{
     color: #737373;
     font-size: 0.75em;
+}
+/*-------------game center-------------*/
+.game-center hr {
+    margin: 2rem 0;
+    border: 0.5px solid rgba(255, 255, 255, 0.2);
+    /* margin: 50px 0px; */
+}
+.game-center a{
+    display: inline-block;
+}
+.game-title:hover{
+    color: #B90004;
+    transition: all .3s;
+}
+/*--<a>-red--*/
+.a-red {
+    background-color: #b90004;
+    color: white;
+}
+.a-red:hover{
+    color: white;
+    background-color: #ce4150;
+}
+/*--404--*/
+.pic-wrong{
+    width: 200px;
 }

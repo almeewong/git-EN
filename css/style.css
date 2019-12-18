@@ -1016,7 +1016,7 @@ a.news-wrap {
 }
 a.news-wrap:hover {
 	text-decoration: none;
-	color: #333
+	-webkit-filter:brightness(1.5);
 }
 .news-right {
 	color: #fff;
@@ -1670,13 +1670,10 @@ padding: 0px 20px;
 .redfont{
     color: #b90004;
 }
-.whitefont{
-    color: white!important;
-}
+
 a img:hover{
     
 }
-
 /*-------------payment2--------------*/
 .ps2 .gn{
     line-height: 40px;
@@ -1988,12 +1985,15 @@ textarea:focus{
     /* margin-right: 240px; */
 }
 
-/*--------color--------*/
+/*--------font-color--------*/
 .gray_01{
     color: #848484;
 }
 .gray_02{
     color: #c3c3c3;
+}
+.white{
+    color: white!important;
 }
 /*--------request-list--------*/
 
