@@ -13,11 +13,11 @@
 <!-- styles -->
 <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+<link href="css/table.css" rel="stylesheet">
 <!--共用CSS-->
 <link href="css/fontawesome-free/css/all.min.css" rel="stylesheet">
-<link href="css/slider.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
-<link href="css/style_Us.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style_Us.css">
 <link rel="stylesheet" href="css/responsive.css">
 <!-- hint提示文字 CSS -->
 <link rel="stylesheet" href="css/hint.css">
@@ -56,22 +56,89 @@
 </nav>
 <!--/此區塊webview需隱藏-->
 
+
+<div class="breadcrumb-wrap mt-3">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+      <li class="breadcrumb-item"><a href="edit-account.html">Member Center<!-- 會員專區 --></a></li>
+      <li class="breadcrumb-item active">Support Records<!-- 儲值紀錄 --></li>
+    </ol>
+    
+  </div>
+</div>
 <!-- Page Content -->
-<div class="container mt-5 mb-5">
+<!-- 麵包屑結束 -->
+<div class="container" >
+ <div class="row">
+            <div class="col-12 d-md-none nav_bottom">
+                 <div class="form-row mob_bottom_nav mobile_top_nav align-items-center tab_member">
+        <div class="col-4 text-center "><a href="edit-account.html" class="mobile_top_nav_default">Member Center</a></div>
+        <div class="col-4 text-center"><a href="payment-list.html" class="mobile_top_nav_default">Top Up Record</a></div>
+        <div class="col-4 text-center"><a href="javascript:void(0)" class="mobile_top_nav_active">Support Records</a></div>
+        </div>
+        </div>
+        </div>
+ 
   <div class="row">
-    <div class="col-sm-12">
-      <center>
-       <h3 class="white mb-3">Coming Soon!<!--Please Wait a Moment!--></h3>
-        <div class="justify-content-center"> <img src="images/banner-700x350.jpg" class="img-fluid"> </div>
-      </center>
+    <div class="col-sm-12 col-lg-4 sidebar-nav d-none d-md-block">
+      <ul>
+        <!--狀況說明 : 提示資料大於1-9筆-->
+        <li><a href="edit-account.html" class="">Member Center</a></li>
+        <!--狀況說明 : 等級不足時出現的情況-->
+        <li><a href="payment-list.html">Top Up Records<span class="circle-gray"></span> </a> </li>
+        <!--狀況說明 : 提示資料大於10筆以上-->
+        <li><a href="javascript:void(0)" class="active white">Support Records<span class="circle-gray"></span> </a></li>
+      </ul>
+    </div>
+    <div class="col-sm-12 col-lg-8 padbot80">
+     
+     <div class="breadcrumb-title">Support Records<!-- 客服紀錄--></div>
+     
+      <div class="form-group row">
+        <div class="col-md-12 text-left">
+        
+        <div class="form-row">
+        <div class="col-md-6">
+            <div class="">
+                <select class="form-control drop_down">
+				 <option>Last 30 days</option>
+				 <option>30~180 days
+
+</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-md-4 mobile-mt3">
+             <div class="form-group">
+             <select class="form-control drop_down">
+              <option>All Games</option>
+              <option>RO Revival</option>
+             </select>
+          </div>
+        </div>
+        <div class="col-md-2">
+        <button id="myBtn" class="btn btn-primary1 col-12" type="submit">Search<!--搜索--></button>
+        </div>
+        </div>
+          
+            
+          
+        </div>
+      </div>
+	  <label class="text-white">Total <span class="red">0</span> showing 0 records</label>
+	  <div class="record-no text-center d-flex align-items-center justify-content-center">
+		<p class="">No Support Record Found<!--沒有儲值紀錄--></p>
+	  </div>
+	  
+	   
     </div>
   </div>
 </div>
-<!-- /.container --> 
-
 <!-- Footer -->
 <!--此區塊webview需隱藏-->
-<footer class="py-4 footer-wrap">
+<footer class="py-4 footer-wrap pb-mob-70">
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-md-6 text-md-left text-sm-center mobile-text-center"> <img src="images/s_wegame_logo.png">
@@ -87,14 +154,16 @@
     </div>
   </div>
 <!--/此區塊webview需隱藏-->
-  <!--go top-->
+  
+<!--go top-->
 <a href="" id="gotop">
    <i class="fa fa-angle-up"></i>
 </a>
- 
+
   <!-- /.container --> 
 </footer>
 <div class="overlay"></div><!--控制點選hamburger後，將遮罩下方body部分，讓使用者著重在ham選單裡的項目-->
+<script  src="js/table.js"></script> 
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="js/all.js"></script>
