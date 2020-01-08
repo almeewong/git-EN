@@ -227,3 +227,7 @@ background-position: center top;
 .pic-wrong{
     width: 200px;
 }
+
+.placehoder-color::-webkit-input-placeholder{/* 支援Chrome/Opera/Safari */
+  color: #848484; /* 文字顏色 */
+}
