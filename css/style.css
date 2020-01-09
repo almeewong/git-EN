@@ -16,6 +16,8 @@ body {
 	/* padding-bottom: 22rem; */
 	min-height: 100%;
 	font-family: "Helvetica Neue", Arial, sans-serif;
+    word-wrap: break-word;
+    word-break: keep-all;
 }
 * {
 	padding: 0;
@@ -1865,6 +1867,9 @@ a img:hover{
 /*-------------間隔-外距 (Spacing)--------------*/
 .mt-05{
     margin-top: 5px;
+}
+.mt-10{
+    margin-top: 10px;
 }
 .mt-30{
     margin-top: 30px;

@@ -1,6 +1,3 @@
-body{
-    word-break: break-all;
-}
 @media (min-width: 992px){
     body{
         padding-top: 88px;
@@ -212,6 +209,10 @@ background-position: center top;
 }
 .game-title:hover{
     color: #B90004;
+    transition: all .3s;
+}
+.game_icon:hover{
+    filter: brightness(1.5);
     transition: all .3s;
 }
 /*--<a>-red--*/

@@ -183,6 +183,11 @@ background: -o-linear-gradient(90deg, rgba(0, 0, 0, 1)0%, rgba(0, 0, 0, 0)130%);
     padding: .5rem 1rem;
 }
 }
+@media only screen and (min-width: 769px){
+    th,td{
+    text-align: center!important;/*置中表格內的文字*/
+}
+}
 /*----------iphone5 / SE----------*/
 
 
