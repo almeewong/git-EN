@@ -2000,6 +2000,10 @@ textarea:focus{
 .white{
     color: white!important;
 }
+/*--------font-weight字重--------*/
+.font-600{
+    font-weight: 600;
+}
 /*--------request-list--------*/
 
 /*--------------分頁按鈕----------------*/
